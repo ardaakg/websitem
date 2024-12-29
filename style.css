@@ -1,0 +1,132 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #3c3c3c;
+    background-image: url(black-3840x2160-orange-smoke-25429.jpg); /* Arka plan resmi */
+    background-size: cover; /* Resmi kaplayıcı boyutta ayarlar */
+    background-position: center; /* Resmi merkezde hizalar */
+    background-repeat: no-repeat; /* Resmi tekrar etmez */
+    min-height: 100vh; /* Yüksekliği tam ekran yapar */
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(51, 51, 51, 0.9); /* Yarı saydam arka plan */
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #d04500;
+    transform: scale(1.05);
+}
+
+/* Bölüm Başlıkları */
+section h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+/* Hakkında, Projelerim ve İletişim Bölümleri */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(48, 48, 48, 0.15);
+    max-width: 800px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+#projelerim ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projelerim ul li {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #333;
+}
+
+#projelerim ul li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+section p {
+    font-size: 18px;
+    color: #ddd;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    section {
+        padding: 30px;
+        margin: 10px;
+    }
+}
+#hobilerim ul {
+    list-style-type: square; /* Listeye kare işaretler ekler */
+    margin: 20px auto;
+    padding: 0;
+    text-align: left;
+    color: #fff; /* Daha açık bir yazı rengi */
+    font-size: 18px; 
+    line-height: 1.8; /* Satır aralığını artırdık */
+}
+
+#hobilerim ul li {
+    margin-bottom: 10px; /* Listedeki her eleman arasında boşluk */
+}
+
+#hobilerim p {
+    font-size: 22px; /* Paragraf boyutunu artırdık */
+    color: #eee; /* Daha açık paragraf rengi */
+    text-align: center;
+}
+
